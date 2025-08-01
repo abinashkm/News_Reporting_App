@@ -1,0 +1,141 @@
+.anc-header {
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  font-family: Arial, sans-serif;
+}
+
+.anc-header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem 1.5rem 1.5rem;
+}
+
+.anc-header__left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon-menu,
+.icon-search {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-menu {
+  background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='5' width='28' height='2.5' rx='1.25' fill='black'/%3E%3Crect y='12.25' width='28' height='2.5' rx='1.25' fill='black'/%3E%3Crect y='19.5' width='28' height='2.5' rx='1.25' fill='black'/%3E%3C/svg%3E");
+}
+
+.icon-search {
+  background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='13' cy='13' r='8' stroke='black' stroke-width='2.5'/%3E%3Crect x='20.071' y='19.071' width='2.5' height='7' rx='1.25' transform='rotate(-45 20.071 19.071)' fill='black'/%3E%3C/svg%3E");
+}
+
+.anc-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.anc-logo-box {
+  background: #000;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.25rem;
+  border-radius: 5px;
+}
+
+.anc-header__right {
+  display: flex;
+  align-items: center;
+  gap: 1.0rem;
+}
+
+.register-btn {
+  background: #000;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: bold;
+  padding: 0.3rem 1.0rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.signin-link {
+  font-size: 0.6rem;
+  font-weight: bold;
+  border-radius: 25px;
+  color: #222;
+  cursor: pointer;
+  padding: 0.3rem 1.0rem;
+}
+
+.anc-header__nav {
+  border-top: 1px solid #ececec;
+  border-bottom: 2px solid #ececec;
+  background: #fff;
+  align-items: center;
+}
+
+.anc-header__nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0 2rem;
+  height: 56px;
+  padding-left: 0.9rem;
+}
+
+.anc-header__nav li {
+  position: relative;
+}
+
+.anc-header__nav a {
+  display: inline-block;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+  padding: 0 0.2rem;
+  line-height: 56px;
+  transition: color 0.2s;
+}
+
+.anc-header__nav a:hover,
+.anc-header__nav li.active a {
+  color: #000;
+}
+
+.anc-header__nav li.active a::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: 4px;
+  background: #000;
+  border-radius: 2px;
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+}
