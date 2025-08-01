@@ -1,0 +1,35 @@
+.news-feed {
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.news-feed h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.news-article {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.news-article h3 {
+  margin: 0 0 0.5rem 0;
+  color: #1976d2;
+}
+
+.news-article p {
+  margin: 0 0 0.5rem 0;
+  color: #444;
+}
+
+.news-article a {
+  color: #1976d2;
+  text-decoration: underline;
+  font-weight: bold;
+}
