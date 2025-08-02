@@ -28,17 +28,13 @@
   align-items: center;
 }
 
-.icon-menu,
+// .icon-menu,
 .icon-search {
   display: inline-block;
   width: 28px;
   height: 28px;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.icon-menu {
-  background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='5' width='28' height='2.5' rx='1.25' fill='black'/%3E%3Crect y='12.25' width='28' height='2.5' rx='1.25' fill='black'/%3E%3Crect y='19.5' width='28' height='2.5' rx='1.25' fill='black'/%3E%3C/svg%3E");
 }
 
 .icon-search {
@@ -49,14 +45,15 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  padding-left: 2rem;
 }
 
 .anc-logo-box {
   background: #000;
   color: #fff;
   font-size: 1.5rem;
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,7 +70,7 @@
 .register-btn {
   background: #000;
   color: #fff;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   font-weight: bold;
   padding: 0.3rem 1.0rem;
   border-radius: 25px;
@@ -81,7 +78,7 @@
 }
 
 .signin-link {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   font-weight: bold;
   border-radius: 25px;
   color: #222;
@@ -93,35 +90,36 @@
   border-top: 1px solid #ececec;
   border-bottom: 2px solid #ececec;
   background: #fff;
-  align-items: center;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 .anc-header__nav ul {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  gap: 2.2rem;
+  width: 100%;
+  gap: 0; // Remove gap, spacing will be handled by space-between
   list-style: none;
   margin: 0;
-  padding: 0 2rem;
-  height: 56px;
-  padding-left: 0.9rem;
+  padding: 0;
 }
 
 .anc-header__nav li {
+  flex: 1 1 0;
+  text-align: center;
   position: relative;
 }
 
 .anc-header__nav a {
-  display: inline-block;
+  display: block;
   font-weight: bold;
   color: #222;
   text-decoration: none;
   padding: 0 0.2rem;
-  line-height: 56px;
+  line-height: 48px;
   transition: color 0.2s;
 }
-
 .anc-header__nav a:hover,
 .anc-header__nav li.active a {
   color: #000;
@@ -138,4 +136,19 @@
   position: absolute;
   left: 20%;
   bottom: 0;
+}
+
+.anc-header__stock {
+  padding: 1rem 2rem;
+  background: #f8f8f8;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+.anc-header__stock p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.8rem;
+  color: #333;
 }
